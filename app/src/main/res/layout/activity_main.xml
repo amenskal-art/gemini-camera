@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <SurfaceView
+        android:id="@+id/cameraSurfaceView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="#FAFAFA">
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView android:text="Brightness" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <SeekBar android:id="@+id/seekBrightness" android:max="100" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8dp"/>
+
+            <TextView android:text="Contrast" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <SeekBar android:id="@+id/seekContrast" android:max="100" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8dp"/>
+            
+            <TextView android:text="Exposure" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <SeekBar android:id="@+id/seekExposure" android:max="100" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8dp"/>
+
+            <TextView android:text="Sharpness" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <SeekBar android:id="@+id/seekSharpness" android:max="100" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8dp"/>
+            
+            <TextView android:text="White Balance" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <SeekBar android:id="@+id/seekWhiteBalance" android:max="100" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8dp"/>
+            
+            <TextView android:text="Zoom" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <SeekBar android:id="@+id/seekZoom" android:max="100" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
